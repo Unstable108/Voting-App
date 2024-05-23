@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-const { type } = require("os");
-// const bcypt = require("bcrypt");
+// const bcrypt = require('bcrypt');
 
-//define the person schema
+// Define the Person schema
 const candidateSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -35,6 +34,5 @@ const candidateSchema = new mongoose.Schema({
   },
 });
 
-//create candidate Model
 const Candidate = mongoose.model("Candidate", candidateSchema);
 module.exports = Candidate;
